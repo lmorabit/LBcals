@@ -1,0 +1,126 @@
+VIII/97      74MHz VLA Low-frequency Sky Survey Redux (VLSSr)      (Lane+, 2014)
+================================================================================
+The Very Large Array Low-frequency Sky Survey Redux (VLSSr).
+    Lane W.M., Cotton W.D., van Velzen S., Clarke T.E., Kassim N.E.,
+    Helmboldt J.F., Lazio T.J.W., Cohen A.S.
+   <Mon. Not. R. Astron. Soc., 440, 327-338 (2014)>
+   =2014MNRAS.440..327L
+================================================================================
+ADC_Keywords: Radio continuum ; Radio sources ; Surveys
+Keywords: techniques: image processing; catalogues; surveys;
+          radio continuum: general
+
+Abstract:
+    We present the results of a recent re-reduction of the data from the
+    Very Large Array (VLA) Low-frequency Sky Survey (VLSS). We used the
+    VLSS catalogue as a sky model to correct the ionospheric distortions
+    in the data and create a new set of sky maps and corresponding
+    catalogue at 73.8MHz. The VLSS Redux (VLSSr) has a resolution of 75",
+    and an average map rms noise level of {sigma}~0.1Jy/beam. The clean
+    bias is 0.66x{sigma} and the theoretical largest angular size is 36'.
+    Six previously unimaged fields are included in the VLSSr, which has an
+    unbroken sky coverage over 9.3sr above an irregular southern boundary.
+    The final catalogue includes 92964 sources. The VLSSr improves upon
+    the original VLSS in a number of areas including imaging of large
+    sources, image sensitivity, and clean bias; however the most critical
+    improvement is the replacement of an inaccurate primary beam
+    correction which caused source flux errors which vary as a function of
+    radius to nearest pointing centre in the VLSS.
+
+Description:
+    The VLSSr reprocessed all of the data from the original VLSS project.
+    The observations were made between 2001 and 2007, under VLA observing
+    programs AP397, AP441, AP452, and AP509. The sky was divided into a
+    roughly hexagonal grid of 523 pointing centres, at a spacing of
+    8.6{deg}. The bandwidth used was 1.56MHz centred at 73.8MHz. Fields in
+    the range -10<DEC<80{deg} were observed in the VLA B configuration,
+    while those at DEC<-10{deg} and DEC>80{deg} were observed in the BnA
+    configuration to compensate for beam elongation at low elevations.
+    Further details of the observational setup are given in Cohen et al.
+    (VLSS; 2007, Cat. VIII/79).
+
+    The final catalogue contains 92964 entries. Of these, roughly 3 per
+    cent have no match in the NVSS within 60 arcsec of the fitted
+    position. However many unmatched sources are actually components of
+    larger sources which may be fit differently in the two catalogues.
+
+    The global rms position error is 3.3 arcsec in RA and 3.5 arcsec in
+    declination.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .   This file
+table1.dat      81      523   List of each pointing
+catalog.dat    105    92965   VLSSr catalog
+--------------------------------------------------------------------------------
+
+See also:
+ VIII/81 : Sydney University Molonglo Sky Survey (SUMSS V2.1) (Mauch+ 2008)
+ VIII/79 : The VLA Low-frequency Sky Survey at 74MHz (VLSS) (Cohen+ 2007)
+ VIII/65 : 1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)
+ VIII/62 : The Westerbork Northern Sky Survey (Leiden, 1998)
+ VIII/31 : Revised source list for the Rees 38-MHz survey (Hales+ 1995)
+ VIII/23 : 6C Survey of radio sources - IV. (Hales+ 1991)
+ VIII/5  : Bright Extragalactic Radio Sources (1Jy) (Kuehr+, 1981)
+ J/ApJS/200/8     : AGES: the AGN and Galaxy Evolution Survey (Kochanek+, 2012)
+ J/MNRAS/402/2403 : Australia Telescope 20GHz Survey Catalog (Murphy+, 2010)
+ J/A+A/456/791    : XMM-LSS field at 74 and 325MHz (Tasse+, 2006)
+ J/MNRAS/352/131  : 13+38 XMM-Newton/ROSAT 1.4GHz radio catalog (Seymour+, 2004)
+ http://www.cv.nrao.edu/vlss/VLSSpostage.shtml : VLSSr Postage Stamp server
+
+Byte-by-byte Description of file: table1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label   Explanations
+--------------------------------------------------------------------------------
+   1-  8  A8    ---     Field   Field designation (HHMM+DDd; J2000)
+  10- 15  F6.4  Jy      rms     [0.04/1.5] rms noise over the inner half of
+                                  the image; in Jy/beam
+  17- 21  I5    ---     Range   [8/16679] Final dynamic range (peak to rms)
+  23- 32  A10   ---     Meth    Reduction method used on the final map (1)
+  34- 81  A48   ---     Note    Notes
+--------------------------------------------------------------------------------
+Note (1): Method as follows:
+ 2    = second order Zernike fits
+ 3    = third order Zernike fits
+ nvss = NVSS was used as a calibrator catalogue
+ brt  = bright source subtracted, with the source indicated in the notes column
+ peel = sources with peaks greater than 10Jy/beam were peeled
+ RFI  = more stringent RFI (Obit tasks: RFIFilt, AutoFlag;
+        Lane et al. 2012RaSc...47.0K04L; Cotton W.D. 2009, Obit Development
+        Memo Series. Vol. 16.) removal criteria were used.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: catalog.dat
+--------------------------------------------------------------------------------
+  Bytes Format Units   Label   Explanations
+--------------------------------------------------------------------------------
+  1- 10  F10.6 deg     RAdeg   Right ascension (J2000) (RA2000)
+ 12- 21  F10.6 deg     DEdeg   Declination (J2000) (DEC2000)
+ 23- 29  F7.2  Jy      Sp      [0.2/8498] Peak intensity at 74MHz;
+                                 in Jy/beam (PEAK_INT)
+ 31- 34  F4.2  deg     MajAx   [0.02/0.03] Major axis of deconvolved
+                                 component size (MAJOR_AX)
+ 36- 39  F4.2  deg     MinAx   [0.02/0.03] Minor axis of deconvolved
+                                 component size (MINOR_AX)
+ 41- 46  F6.2  deg     PA      [-90/90] Position angle of Major Ax (POSANGLE)
+ 48- 51  F4.2  Jy    e_Sp      [0.05/7.1] Intensity RMS in Jy/beam (I_RMS)
+ 53- 58  F6.2  Jy      Rrms    [0.02/353] Residual RMS, in Jy/beam (RES_RMS)
+ 60- 66  F7.2  Jy      Rpk     [0.05/3824] Residual peak intensity, in Jy/beam
+                                (RES_PEAK)
+ 68- 74  F7.2  Jy      RFlx    [-102/105] Residual integrated flux (RES_FLUX)
+ 76- 81  F6.1  pix     Xpos    [332/3745] X position of source on map (CENTER_X)
+ 83- 88  F6.1  pix     Ypos    [332/3745] Y position of source on map (CENTER_Y)
+ 90- 97  A8    ---     Field   Field designation (HHMM+DDd; J2000) (FIELD)
+ 99-105  I7    d       JD      [2456435] Julian Date field processed (2456435)
+                                (JD_PROCESSED)
+--------------------------------------------------------------------------------
+
+History:
+  * 29-Oct-2014: from electronic version of the journal for table 1.
+    Copied at http://www.cv.nrao.edu/vlss/CATALOG/ for VLSSR.CATALOG.FIT
+    (26-Aug-2013 version)
+
+================================================================================
+(End)                                     Emmanuelle Perret [CDS]    29-Oct-2014

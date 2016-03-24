@@ -1,0 +1,161 @@
+J/AJ/147/14                 The mJIVE-20 catalog                 (Deller+, 2014)
+================================================================================
+mJIVE-20: a survey for compact mJy radio objects with the Very Long Baseline
+Array.
+    Deller A.T., Middelberg E.
+   <Astron. J., 147, 14 (2014)>
+   =2014AJ....147...14D
+================================================================================
+ADC_Keywords: Surveys ; Radio sources ; Interferometry
+Keywords: galaxies: active - radio continuum: galaxies - surveys -
+          techniques: high angular resolution - techniques: interferometric
+
+Abstract:
+    We present the description and early results of the mJy Imaging VLBA
+    Exploration at 20cm (mJIVE-20). mJIVE-20 is a large project on the
+    Very Long Baseline Array which is systematically inspecting a large
+    sample of mJy radio sources, pre-selected from the Faint Images of the
+    Radio Sky at Twenty cm (FIRST) survey made with the Very Large Array,
+    to identify any compact emission that may be present. The survey is
+    being undertaken using filler time on the VLBA, which utilizes short
+    segments scheduled in bad weather and/or with a reduced number of
+    antennas, during which no highly rated science projects can be
+    scheduled. The newly available multifield capability of the VLBA makes
+    it possible for us to inspect of the order of 100 sources per hour of
+    observing time with a 6.75{sigma} detection sensitivity of
+    approximately 1mJy/beam. The results of the mJIVE-20 survey are made
+    publicly available as soon as the data are calibrated. After 18 months
+    of observing, over 20000 FIRST sources have been inspected, with 4336
+    very long baseline interferometry detections. These initial results
+    suggest that within the range 1-200mJy, fainter sources are somewhat
+    more likely to be dominated by a very compact component than brighter
+    sources. Over half of all arcsecond-scale mJy radio sources contain a
+    compact component, although the fraction of sources that are dominated
+    by milliarcsecond scale structure (where the majority of the arcsecond
+    scale flux is recovered in the mJIVE-20 image) is smaller at around
+    30%-35%, increasing toward lower flux densities. Significant
+    differences are seen depending on the optical classification of the
+    source. Radio sources with a stellar/point-like counterpart in the
+    Sloan Digital Sky Survey (SDSS) are more likely to be detected
+    overall, but this detection likelihood appears to be independent of
+    the arcsecond-scale radio flux density. The trend toward higher radio
+    compactness for fainter sources is confined to sources that are not
+    detected in SDSS or that have counterparts classified as galaxies.
+    These results are consistent with a unification model of active
+    galactic nuclei in which less luminous sources have on average slower
+    radio jets, with lower Doppler suppression of compact core emission
+    over a wider range of viewing angles.
+
+Description:
+    The mJy Imaging VLBA Exploration at 20cm (mJIVE-20) is a large project
+    on the Very Long Baseline Array (VLBA) which is systematically
+    inspecting a large sample of mJy radio sources, pre-selected from the
+    Faint Images of the Radio Sky at Twenty centimeters (FIRST; Becker et
+    al. 2012, cat. VIII/90) survey made with the Very Large Array (VLA),
+    to identify any compact emission that may be present.
+
+    The mJIVE-20 survey was approved with an initial allocation of 200hr
+    of observing time at the filler level priority (VLBA project code
+    BD161), and has now been extended to a total of 600hr (VLBA project
+    code BD170).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl   Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80         .   This file
+catalog.dat   198     23629   mJIVE-20 catalog (20-31 Dec 2013)
+table4.dat     53        19   Known variable sources observed by mJIVE-20
+table5.dat     53        53   Variable sources discovered by mJIVE-20
+--------------------------------------------------------------------------------
+
+See also:
+ V/139   : The SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)
+ VIII/90 : The FIRST Survey Catalog, Version 12Feb16 (Becker+ 2012)
+ VIII/65 : 1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)
+ J/A+A/551/A97  : Lockman Hole/XMM VLBI observations (Middelberg+, 2013)
+ J/ApJ/742/49   : Variable and transient radio sources in FIRST
+                  (Thyagarajan+, 2011)
+ J/A+A/520/A113 : VLBI detection of 398 extragalactic radio sources
+                  (Bourda+, 2010)
+ J/AJ/136/580   : Sixth VLBA calibrator survey: VCS6 (Petrov+, 2008)
+ J/ApJ/658/203  : VLBA imaging and polarimetry survey at 5GHz (Helmboldt+, 2007)
+ J/AJ/127/2565  : Faint FIRST variable radio sources (De Vries+, 2004)
+ J/AJ/125/465   : Phoenix Deep Survey 1.4-GHz microJy Catalog (Hopkins+, 2003)
+ J/ApJS/141/13  : VLBA calibrator survey: VCS1 catalog (Beasley+, 2002)
+ http://safe.nrao.edu/vlba/mjivs : mJIVE-20
+ http://astrogeo.org/rfc         : Radio fundamental catalog
+
+Byte-by-byte Description of file: catalog.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label   Explanations
+--------------------------------------------------------------------------------
+   1-  3  A3    ---      ---     [MJV]
+   4-  8  I05   ---      MJV     [0/24478] The mJIVE-20 number
+  10- 11  I2    h        RAh     FIRST Hour of Right Ascension (J2000)
+  13- 14  I2    min      RAm     FIRST Minute of Right Ascension (J2000)
+  16- 21  F6.3  s        RAs     FIRST Second of Right Ascension (J2000)
+      23  A1    ---      DE-     FIRST Sign of the Declination (J2000)
+  24- 25  I2    deg      DEd     FIRST Degree of Declination (J2000)
+  27- 28  I2    arcmin   DEm     FIRST Arcminute of Declination (J2000)
+  30- 34  F5.2  arcsec   DEs     [0/60] FIRST Arcsecond of Declination (J2000)
+  36- 42  F7.2  mJy      Fpk     FIRST peak flux density (in mJy/beam)
+  44- 50  F7.2  mJy      Fint    FIRST integrated flux density
+  52- 56  F5.2  mas      BMaj    VLBI synthesized beam major axis
+  58- 62  F5.2  mas      BMin    VLBI synthesized beam minor axis
+  64- 68  F5.1  deg      BPA     VLBI synthesized beam position angle
+      70  A1    ---    l_Vpk     Limit flag on Vpk
+  71- 77  F7.2  mJy      Vpk     VLBI peak flux density (in mJy/beam)
+  79- 83  F5.2  mJy    e_Vpk     ? Error in Vpk
+  85- 86  I2    h        RAVh    ? VLBI Hour of Right Ascension (J2000)
+  88- 89  I2    min      RAVm    ? VLBI Minute of Right Ascension (J2000)
+  91- 99  F9.6  s        RAVs    ? VLBI Second of Right Ascension (J2000)
+ 101-108  F8.6  s      e_RAVs    ? Error in RAVs
+     110  A1    ---      DEV-    ? VLBI Sign of the Declination (J2000)
+ 111-112  I2    deg      DEVd    ? VLBI Degree of Declination (J2000)
+ 114-115  I2    arcmin   DEVm    ? VLBI Arcminute of Declination (J2000)
+ 117-124  F8.5  arcsec   DEVs    ? VLBI Arcsecond of Declination (J2000)
+ 126-132  F7.5  arcsec e_DEVs    ? Error in DEVs
+ 134-138  F5.3  ---      V/Fpk   ? Ratio of VLBI to FIRST peak flux densities
+ 140-146  F7.2  mJy      Vint    ? VLBI integrated flux density
+ 148-154  F7.2  mJy    e_Vint    ? Error in Vint
+ 156-160  F5.3  ---      V/Fint  ? Ratio of VLBI integrated flux density to
+                                   FIRST peak flux density
+ 162-166  F5.1  mas      DMaj    ? VLBI single-gaussian deconvolved major axis
+ 168-172  F5.1  mas    e_DMaj    ? Error in DMaj
+ 174-178  F5.1  mas      DMin    ? VLBI single-gaussian deconvolved minor axis
+ 180-184  F5.1  mas    e_DMin    ? Error in DMin
+ 186-190  F5.1  deg      DPA     ? VLBI single-gaussian deconvolved position
+                                   angle
+ 192-196  F5.1  deg    e_DPA     ? Error in DPA
+     198  A1    ---      C       [C] C = Complex flag (1)
+--------------------------------------------------------------------------------
+Note (1): Denotes a source for which the signal-to-noise ratio of the
+     single Gaussian fit was less than the cutoff value of 6.75, but for
+     which the peak image pixel exceeded a threshold set based on expected
+     image noise, triggering a manual inspection of the data which verified
+     this source to be real.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table[45].dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  3  A3    ---     ---       [MJV]
+   4-  8  I05   ---     MJV       [1591/22015] The mJIVE-20 number
+  10- 14  A5    ---     ---       [FIRST]
+  16- 36  A21   ---     FIRST     The FIRST identifier (JHHMMSS.sss+DDMMSS.ss)
+  38- 41  F4.1  mJy     Fpk       FIRST peak flux density (in mJy/beam)
+      43  A1    ---   l_Vpk       [<] Upper limit flag on Vpk
+  44- 47  F4.1  mJy     Vpk       VLBI peak flux density (in mJy/beam)
+      49  A1    ---   l_V/Fpk     [<] Upper limit flag on Vpk/Fpk
+  50- 53  F4.2  ---     V/Fpk     Ratio of VLBI to FIRST peak flux densities
+--------------------------------------------------------------------------------
+
+History:
+  * 26-Jan-2015:
+    # Tables 4 and 5 from electronic version of the journal
+    # mJIVE-20 catalog copied at http://safe.nrao.edu/vlba/mjivs/catalog.html
+
+================================================================================
+(End)                Greg Schwarz [AAS], Sylvain Guehenneux [CDS]    26-Jan-2015

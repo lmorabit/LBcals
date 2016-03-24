@@ -1,0 +1,170 @@
+VIII/62             The Westerbork Northern Sky Survey      (Leiden, 1998)
+================================================================================
+Westerbork Northern Sky Survey (WENSS)
+   de Bruyn G., Miley G., Rengelink R., Tang Y., Bremer M., Rottgering H.,
+   Raimond R., Bremer M., Fullagar D.
+  <WENSS Collaboration NFRA/ASTRON and Leiden Observatory (1998)>
+================================================================================
+ADC_Keywords: Radio sources ; Surveys
+
+Description:
+    The Westerbork Northern Sky Survey (WENSS) is a low-frequency radio
+    survey that covers the whole sky north of 30{deg} at a wavelength of
+    92cm (330MHz) to a limiting flux density of approximately 18 mJy
+    (5{sigma}). This survey has a resolution of 54"x54" cosec(delta) and a
+    positional accuracy for strong sources of 1.5".
+
+    The WENSS project is a collaboration between the Netherlands
+    Foundation for Research in Astronomy (NFRA/ASTRON) and the
+    Leiden Observatory.
+
+Introduction to the WENSS:
+    The Westerbork Northern Sky Survey (WENSS) is a radio survey made with
+    the WSRT at wavelengths 92 and 49 cm. At 92 cm the entire sky above
+    declination 30{deg} is covered. The other wavelength regime does
+    not cover the whole sky, but only 30-50 percent, due to the amount of
+    telescope time that is needed to do this. Using a synthesis array like
+    the WSRT means that we get a better resolution than single dish
+    observations, but also has the disadvantage of a smaller field of
+    view, unless we find a way of dealing with wide field imaging. The
+    solution for this problem is mosaicing. Instead of making one
+    observation of a large field we make a lot of snapshots of different
+    fields and bind them together with the help of special build software.
+    A typical mosaic contains 80 pointing centres. Each pointing centre is
+    sampled during 20 seconds and then the telescope moves to another
+    centre. This takes about 10 seconds. After 40 minutes all fields are
+    scanned and the procedure starts again. This means that in a 12 hour
+    observation each field is scanned 18 times. To move grating rings of
+    the map 6 different baseline settings are used, so 1 mosaic data block
+    involves 72 hours of observational data. Each pointing centre is
+    located at half half-power maximum beamwidth in order to get a smooth
+    sampling grid of the data. The noise background is uniform up to 5
+    percent. At 92 cm (declination 30{deg}) a mosaic block is about 10
+    by 14{deg} large.
+
+    The final product that the WENSS survey produces contain 6x6{deg}
+    frames taken from the mosaic blocks. They are centered on the new POSS
+    plate positions (5{deg} grid). The limiting flux density will be about
+    15 mJy (5 sigma) at both wavelengths. As a result the final catalogue
+    will consist of 300,000 sources at 92 cm and 60,000 at 49 cm. The
+    positional accuracy will be superior to all other all sky surveys (5"
+    for the faint sources to better than 1" for the stronger sources). A
+    large number of sources will have sufficient accurate positions to
+    allow optical identification using a digitized version of the Palomar
+    Sky Survey made with the APM at Cambridge. Final maps will be made at
+    different resolutions in order to make accurate spectral index
+    measurements. At each wavelength we will make high, medium and low
+    resolution maps (1', 2.5' and 4' resolution at 92 cm and 0.5', 1' and
+    2.5' resolution at 49 cm). Maps will be made with all Stokes
+    parameters (I, Q, U and V). This means that source information will be
+    available both on spectral type and polarization characteristics. This
+    is important for using the catalogue as a database for finding sources
+    based on well known selection criteria, such as steep spectra for high
+    redshift radio galaxies.
+
+File Summary:
+--------------------------------------------------------------------------------
+  FileName    Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+main.dat      114   211234   WENSS main catalogue (28 to 76{deg})
+polar.dat     114    18186   WENSS polar catalogue (sources above 72{deg})
+--------------------------------------------------------------------------------
+
+See also:
+    http://www.strw.leidenuniv.nl/wenss/ : the WENSS Home Page
+    ftp://vliet.strw.leidenuniv.nl/pub/wenss/HIGHRES/ : maps in FITS format
+    J/A+AS/124/259 : The Westerbork Northern Sky Survey I. (Rengelink+ 1997)
+
+Byte-by-byte Description of file: main.dat polar.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  A2    ---     ---       [WN] Survey name
+   3- 15  A13   ---     Name     *Designation of the source
+      16  A1    ---   f_Name     *[abmp] Several objects share the same name
+  18- 19  I2    h       RA1950h   Right Ascension B1950 (hours)
+  21- 22  I2    min     RA1950m   Right Ascension B1950 (minutes)
+  24- 28  F5.2  s       RA1950s   Right Ascension B1950 (seconds)
+      30  A1    ---     DE1950-   Declination B1950 (sign)
+  31- 32  I2    deg     DE1950d   Declination B1950 (degrees)
+  34- 35  I2    arcmin  DE1950m   Declination B1950 (minutes)
+  37- 40  F4.1  arcsec  DE1950s   Declination B1950 (seconds)
+  43- 44  I2    h       RAh       Right Ascension J2000 (hours)
+  46- 47  I2    min     RAm       Right Ascension J2000 (minutes)
+  49- 53  F5.2  s       RAs       Right Ascension J2000 (seconds)
+      55  A1    ---     DE-       Declination J2000 (sign)
+  56- 57  I2    deg     DEd       Declination J2000 (degrees)
+  59- 60  I2    arcmin  DEm       Declination J2000 (minutes)
+  62- 65  F4.1  arcsec  DEs       Declination J2000 (seconds)
+      68  A1    ---     flg1     *[SMEC] source type flag
+      70  A1    ---     flg2     *[*] problems in fitting the source
+  73- 78  I6    mJy     Speak    *Peak flux density at 330MHz in mJy/beam
+  80- 86  I7    mJy     Sint     *Integrated flux density 330MHz in mJy
+  88- 91  I4    arcsec  MajAxis  *Major axis
+  93- 95  I3    arcsec  MinAxis  *Minor axis
+  97- 99  I3    deg     PA       *Position angle (North to East)
+ 101-104  F4.1  mJy     Nse       Local rms-noise level in mJy/beam
+ 106-114  A9    ---     Frame     Frame from which the source was obtained
+--------------------------------------------------------------------------------
+
+Note on Name, f_Name:
+    The name has a format 'Bhhmm.m+ddmmA', where 'B' indicates a name based
+    on B1950 coordinates, followed by the truncated position to 0.1min in
+    right ascension and 1 arcmin in declination, followed by a letter
+    A,B,C,D for components of the multi-component sources.
+
+    There are 748 names which are assigned to more than one source; these
+    names are flagged "a", "b", "m" or "p" in the f_Name column:
+     a,b  when the same name exists in the same file (there are two
+          identical names in main.dat or polar.dat)
+     m,p  when the same name exists in the other file (there are two
+          identical names, one in main.dat, and the other one in polar.dat)
+
+Note on flg1: this flag indicates the source type as:
+     S = Single component source
+     M = Multicomponent source
+     C = Component of a multicomponent source
+     E = Extended source (more than four components)
+
+Note on flg2: warning flag indicating problems in fitting the source.
+     Source parameters were then obtained using 'aperture' integration.
+
+Note on Speak, Sint:
+     The frequency is 325MHz in the main part, and 352MHz in the polar part.
+
+Note on MajAxis, MinAxis, PA: sources that are probably resolved.
+    Non-null numbers indicate that the flux density ratio Sint/Speak
+    exceeds a signal-to-noise dependent threshold. This threshold is the
+    flux ratio Sint/Speak that is exceeded by less than 5% of the
+    unresolved sources. These parameters have not been deconvolved.
+--------------------------------------------------------------------------------
+
+Project Team:
+  Project scientists:  A.G. de Bruyn, G.K. Miley
+  Project manager:  E. Raimond
+  Research assistants:  M.A.R. Bremer (Leiden), Y. Tang (Dwingeloo)
+  Software design/coding (NEWSTAR): W.N. Brouw
+  Software design/coding (Catalogue building / user interfaces): M.A.R. Bremer
+  WSRT on-line assistance: R. Braun, H. van Someren-Greve
+  Dwingeloo off-line processing: G. van Diepen, J.E. Noordam
+
+    Several AIO's / OIO's (Ph.D. students) will work with the catalogue,
+    each with their own sources of interest (e.g. milli-second pulsars,
+    high redshift galaxies, GHZ peakers).
+
+Data Rights/Acknowledgements:
+    Anyone using data from the WENSS database in publications is asked to
+    acknowledge this. Comments or questions about the survey can be
+    addressed to any of the people mentioned below or to the general
+    wenss.people@strw.leidenuniv.nl account at Leiden.
+
+History:
+  * 10-Feb-2000: Prepared at ADC.
+  * 21-Oct-2003: 19 sources from main.dat had a blank embedded in the
+    name, just following the "WNB" in the Name column; this blank
+    was removed at CDS.
+  * 14-May-2004: the column f_Name was installed to distinguish the
+    sources sharing an identical name.
+================================================================================
+(End)  Gail L. Schneider [SSDOO/ADC],  Francois Ochsenbein [CDS]     10-Feb-2000

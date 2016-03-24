@@ -1,0 +1,78 @@
+VIII/79A            The VLA Low-frequency Sky Survey at 74MHz  (Cohen+ 2007)
+================================================================================
+The VLA Low-frequency Sky Survey
+    Cohen A.S., Lane W.M., Cotton W.D., Kassim N.E., Lazio T.J.W.,
+    Perley R.A., Condon J.J., Erickson W.C.
+   <Astron. J. 134, 1245 (2007)>
+   =2007AJ....134.1245C
+================================================================================
+ADC_Keywords: Radio continuum ; Radio sources ; Surveys
+Keywords: Atmospheric Effects - Catalogs - Radio Continuum: General - Surveys
+
+Abstract:
+    The VLA Low-Frequency Sky Survey (VLSS) is a 74MHz (4m) continuum
+    survey covering the entire sky north of -30{deg} declination. Using
+    the VLA in B- and BnA-configurations, we will map the entire survey
+    region at a resolution of 80" and with an average rms noise of 0.1
+    Jy/beam. For a detailed description of the survey and its scientific
+    motivations, please see the original proposal to the NRAO skeptical
+    review committee.
+
+    The VLSS is being made as a service to the astronomical community,
+    and the principal data products are being released to the public as
+    soon as they are produced and verified. Details and access to the
+    images can be found at http://lwa.nrl.navy.mil/VLSS/
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+catalog.dat   116    68311   The VLSS Catalog, Version 2007-06-26
+--------------------------------------------------------------------------------
+
+See also:
+    http://lwa.nrl.navy.mil/VLSS/ : The VLSS Home Page
+    VIII/41 : The UTR-2 Very Low-Frequency Sky Survey Data (Braude+ 1978-1982)
+    VIII/62 : The Westerbork Northern Sky Survey (Leiden, 1998)
+    VIII/65 : 1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)
+    VIII/71 : The FIRST Survey Catalog, Version 03Apr11 (Becker+ 2003)
+
+Byte-by-byte Description of file: catalog.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label    Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    h         RAh      Right Ascension J2000 (hours)
+   4-  5  I2    min       RAm      Right Ascension J2000 (minutes)
+   7- 11  F5.2  s         RAs      [0,60] Right Ascension J2000 (seconds)
+      13  A1    ---       DE-      Declination J2000 (sign)
+  14- 15  I2    deg       DEd      Declination J2000 (degrees)
+  17- 18  I2    arcmin    DEm      Declination J2000 (minutes)
+  20- 23  F4.1  arcsec    DEs      [0,60] Declination J2000 (seconds)
+  26- 33  F8.2  Jy        Si       Integrated flux density at 74MHz
+      35  A1    ---     l_MajAx    [<] Limit flag on MajAx
+  36- 40  F5.1  arcsec    MajAx    Major axis of deconvolved component size
+      42  A1    ---     l_MinAx    [<] Limit flag on MinAx
+  43- 47  F5.1  arcsec    MinAx    Minor axis of deconvolved component size
+  49- 54  F6.2  deg       PA       ? Position angle of Major Ax
+  57- 64  A8    ---       Field    Field designation (2)
+  68- 71  I4    pix       Xpos     X position of source on map
+  73- 76  I4    pix       Ypos     Y position of source on map
+  79- 83  F5.2  s       e_RAs      Mean error on RA
+  85- 88  F4.1  arcsec  e_DEs      Mean error on Declination
+  91- 97  F7.2  Jy      e_Si       ? Mean error on Si (1)
+ 100-104  F5.1  arcsec  e_MajAx    ? Mean error on  MajAx
+ 106-109  F4.1  arcsec  e_MinAx    ? Mean error on  MinAx
+ 111-116  F6.2  deg     e_PA       ? Mean error on PA
+--------------------------------------------------------------------------------
+Note (1): a large residual indicate a complex structure, i.e. that
+    the model is inadequate to completely describe the source and the
+    original image needs to be examined.
+Note (2): Images are available from  http://www.cv.nrao.edu/4mass/MAPS/
+--------------------------------------------------------------------------------
+
+History:
+  * 08-Aug-2006: First version, from http://www.cv.nrao.edu/4mass/CATALOG/.
+  * 21-Feb-2008: New version http://lwa.nrl.navy.mil/VLSS/VLSScatalog07Jun26
+================================================================================
+(End)                                   Francois Ochsenbein [CDS]    08-Aug-2006

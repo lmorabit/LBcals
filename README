@@ -1,0 +1,44 @@
+Instructions on how to use:
+
+-----------
+Installing R
+
+On linux systems, R can be installed by running
+
+sudo apt-get install R
+
+But it may already be present!  To check simply try to start R:
+
+user@mycomputer$ R
+
+You will need to do this to make sure the proper packages are installed.
+
+Once you start R, do the following:
+
+>install.packages('astro')
+>install.packages('celestial')
+>install.packages('stringr')
+>install.packages('argparser')
+
+After the first install.packages() command, a gui will pop up asking you to select a mirror for the session.
+
+
+-----------
+Running the script
+
+Once R (and the appropriate packages) have been installed, you're ready to go!
+
+To see how to run, simply try:
+
+user@mycomputer$ Rscript LBcals.r -h
+
+And this will show you python-style help/instructions.
+
+PLEASE NOTE!! The script expects you to run it in the same directory as the accompanying data directories 
+		that contain the catalogs (i.e., in the same directory where the directories mJIVE, VLSS, etc. are)
+		If you would like to change this, there is a "catalog_location" parameter in the script that can be changed.
+
+------------
+For any questions, please contact Leah Morabito at lmorabit@gmail.com
+
+Good luck!
